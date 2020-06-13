@@ -1,0 +1,5 @@
+%h1 Open Golf Rounds
+- @rounds.each do |round|
+  %a{:href=> round_path(round.id)}= round.course
+  %br
+%a{:href=> new_round_path} Add a round
